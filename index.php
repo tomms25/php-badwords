@@ -26,12 +26,20 @@
         ?>
     </h1>
 
+    <!-- Spiegazione Massimo -->
+    <!-- <form action="index.php" method="get">
+    <input type="text" name="pippo" id="">
+    <button type="submit">submit</button> -->
+    
+</form>
     <!-- Parola censurata -->
     <h1>
         <?php
-        $censoredWord = $_GET['Lorem'];
+        $censoredWord = '';
+        if (isset($_GET['pippo']))
+            $censoredWord = $_GET['pippo'];
         $newText = str_replace($censoredWord, '***', $text);
-        
+        echo $newText;
         ?>
     </h1>
 
