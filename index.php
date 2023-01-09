@@ -13,7 +13,9 @@
         <?php
         $text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique ullam iusto eos velit quo aspernatur aut, officia quisquam dolores maiores nobis quis est modi obcaecati blanditiis. Pariatur in voluptatibus quos!";
         echo $text;
+        echo strlen($text);
         ?>
+        
     </h1>
 
 
