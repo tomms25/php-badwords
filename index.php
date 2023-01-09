@@ -25,9 +25,12 @@
             echo strlen($text);
         ?>
     </h1>
+
+    <!-- Parola censurata -->
     <h1>
         <?php
-        $_GET[""];
+        $censoredWord = $_GET['Lorem'];
+        $newText = str_replace($censoredWord, '***', $text);
         
         ?>
     </h1>
